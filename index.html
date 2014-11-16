@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Test Project</title>
+
+        <!-- Styles -->
+        <link href="src/css/bootstrap.min.css" rel="stylesheet">
+        <link href="src/css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="src/css/styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Test Project</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Maksym Kosak <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Messages <span class="badge">4</span></a></li>
+                                <li><a href="#">Log out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
+        <section class="container main">
+
+            <div class="row-fluid">
+
+                <!-- default card layout -->
+                <div class="panel panel-default col-md-3 placeholder" data-id="1">
+
+                    <div class="wrapper">
+                        <div class="panel-heading">
+                            <div class="form-group">
+                                <input class="card-label form-control pull-left" name="card-label" value="Add card name" />
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="delete glyphicon glyphicon-remove pull-right"></span>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <textarea class="card-desc form-control pull-left" rows="3" name="card-desc">Add card description</textarea>
+                                <span class="glyphicon glyphicon-pencil pull-right"></span>
+                            </div>
+                            <button type="button" data-event="add-card" class="btn btn-success">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section><!-- /container -->
+
+        <div id="loader" class="active">
+            <svg version="1.1" id="loader-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+              <path fill="#000" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
+                <animateTransform attributeType="xml"
+                  attributeName="transform"
+                  type="rotate"
+                  from="0 25 25"
+                  to="360 25 25"
+                  dur="0.6s"
+                  repeatCount="indefinite"/>
+                </path>
+            </svg>
+        </div>
+
+        <!-- Libraries -->
+        <script src="src/js/libs.js"></script>
+
+        <!-- // Dev - Script
+        <script src="src/js/app/app.main.js"></script>
+        <script src="src/js/app/app.card.js"></script>
+        <script src="src/js/app/app.utils.js"></script>
+        <script src="src/js/app/app.events.js"></script>
+        -->
+
+        <!-- // Production -->
+        <script src="src/js/app.min.js"></script>
+    </body>
+</html>

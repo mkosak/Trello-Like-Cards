@@ -1,0 +1,43 @@
+.opacityShowHide(@amount) {
+    @opacityFilter: @amount * 100;
+    -webkit-opacity: @amount;
+    -moz-opacity: @amount;
+    -ms-opacity: @amount;
+    -o-opacity: @amount;
+    opacity: @amount;
+    filter: alpha(opacity=@opacityFilter);
+    zoom: 1;
+}
+
+.transition(@type, @time, @style) {
+	-webkit-transition: @type @time @style;
+    -moz-transition: @type @time @style;
+    -ms-transition: @type @time @style;
+    -o-transition: @type @time @style;
+    transition: @type @time @style;
+}
+
+.translateXY(@x, @y) {
+    -webkit-transform: translate(@x,@y);
+    -moz-transform: translate(@x,@y);
+    -ms-transform: translate(@x,@y);
+    -o-transform: translate(@x,@y);
+    transform: translate(@x,@y);
+}
+
+.boxShadow(@set) {
+    -webkit-box-shadow: @set;
+    -moz-box-shadow: @set;
+    -ms-box-shadow: @set;
+    -o-box-shadow: @set;
+    box-shadow: @set;
+}
+
+.borderRadius(@amount) {
+    -webkit-border-radius: @amount;
+    -moz-border-radius: @amount;
+    -ms-border-radius: @amount;
+    -o-border-radius: @amount;
+    border-radius: @amount;
+}
+
